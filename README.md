@@ -90,19 +90,19 @@ Hands-on in backend/API automation (**Java, TypeScript, Python**), mobile verifi
 Experience this resume natively inside your terminal:
 
 ```bash
-# Run immediately via NPX
-npx avilano-resume
+# Run immediately via NPX directly from GitHub:
+npx github:avilano/resume
 
-# Or clone and run locally
+# Run with specific flag options:
+npx github:avilano/resume --all         # Full detailed resume
+npx github:avilano/resume --skills      # Core technical competencies
+npx github:avilano/resume --experience  # Work experience breakdown
+npx github:avilano/resume --json        # Raw machine-readable JSON Schema
+
+# Or clone and run locally:
 git clone https://github.com/avilano/resume.git
 cd resume
-node bin/resume.js
-
-# CLI Options:
-node bin/resume.js --all         # Full detailed resume
-node bin/resume.js --skills      # Core technical competencies
-node bin/resume.js --experience  # Work experience breakdown
-node bin/resume.js --json        # Raw machine-readable JSON Schema
+node bin/resume.js --all
 ```
 
 ---

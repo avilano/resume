@@ -453,7 +453,7 @@
       
       <div class="action-group">
         <button class="terminal-pill" onclick="copyTerminalCmd()" id="copyPill" title="Click to copy CLI command">
-          💻 <span>npx avilano-resume</span>
+          💻 <span>npx github:avilano/resume</span>
         </button>
       </div>
     </header>
@@ -671,9 +671,10 @@
         You can inspect my resume directly inside your terminal using Node.js:
       </p>
       <div class="terminal-box">
-        <span class="cmd">$</span> npx avilano-resume<br>
-        <span class="cmd">$</span> npx avilano-resume --skills<br>
-        <span class="cmd">$</span> npx avilano-resume --json
+        <span class="cmd">$</span> npx github:avilano/resume<br>
+        <span class="cmd">$</span> npx github:avilano/resume --skills<br>
+        <span class="cmd">$</span> npx github:avilano/resume --experience<br>
+        <span class="cmd">$</span> npx github:avilano/resume --json
       </div>
     </section>
 
@@ -689,7 +690,7 @@
 
   <script>
     function copyTerminalCmd() {
-      navigator.clipboard.writeText('npx avilano-resume');
+      navigator.clipboard.writeText('npx github:avilano/resume');
       const pill = document.getElementById('copyPill');
       const originalText = pill.innerHTML;
       pill.innerHTML = '✅ <span>Copied to clipboard!</span>';
