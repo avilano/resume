@@ -25,7 +25,7 @@
 
 ## 📌 Executive Summary
 
-Senior QA Automation Engineer and SDET wizard with **9+ years** architecting production-grade test suites, developer tooling, and automated quality gates across high-reliability platforms. Proven track record leading squad quality strategy, pairing with product engineers on TDD and testability, and executing large-scale framework migrations (including **migrating 200+ specs to Playwright**). 
+Senior QA Automation Engineer and SDET wizard with **9+ years** architecting production-grade test suites, developer tooling, and automated quality gates across high-reliability platforms. Proven track record driving squad testability and quality practices, pairing with product engineers on TDD, and executing large-scale framework migrations (including **migrating 200+ specs to Playwright**). 
 
 Hands-on in backend/API automation (**Java, TypeScript, Python**), mobile verification (**Appium**), and AI-driven quality engineering (**custom MCP servers connecting Atlassian Zephyr, automated spec generation, SKILL.md authoring**). Experienced in production observability, log analysis, and incident triage using **Elasticsearch, Datadog, and New Relic** to safeguard transactional integrity and financial flows.
 
@@ -52,7 +52,7 @@ Hands-on in backend/API automation (**Java, TypeScript, Python**), mobile verifi
 * **Team AI Enablement & QA Agents:** Authored and managed specialized QA AI Skills and agents for the engineering org to enforce code review conventions, automate PR quality gates, identify coverage gaps, and accelerate Playwright spec authoring and migration.
 * **Incident Response & Observability:** Troubleshot production anomalies, conducted postmortem root-cause analyses (RCA), and analyzed distributed logs and metrics in Datadog and AWS CloudWatch to isolate backend regressions and verify transactional telemetry.
 * **A11y Standards & Squad Enablement:** Spearheaded the org-wide introduction of accessibility (a11y) testing conventions and WCAG guidelines; paired with feature squads on TDD, predictable selectors best practice strategies, and established automated a11y checks in CI as standard release gates.
-* **Visual Testing & Tooling Enablement:** Drove the end-to-end evaluation and rollout of visual testing frameworks (Applitools), leading tooling research, architecting POCs, authoring team conventions, and delivering documentation and training for org-wide adoption.
+* **Visual Testing & Tooling Enablement:** Drove the end-to-end evaluation and rollout of visual testing frameworks (Applitools), conducting tooling research, architecting POCs, authoring team conventions, and delivering documentation and training for org-wide adoption.
 
 ---
 

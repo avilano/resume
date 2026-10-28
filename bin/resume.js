@@ -79,8 +79,8 @@ function printSummary() {
   console.log(
     `Senior QA Automation Engineer and SDET wizard with ${style.bold}9+ years${style.reset} architecting\n` +
     `production-grade test suites, developer tooling, and automated quality gates\n` +
-    `across high-reliability platforms. Proven track record leading squad quality\n` +
-    `strategy, pairing with product engineers on TDD and testability, and executing\n` +
+    `across high-reliability platforms. Proven track record driving squad testability\n` +
+    `and quality practices, pairing with product engineers on TDD, and executing\n` +
     `large-scale framework migrations (${style.green}migrating 200+ specs to Playwright${style.reset}).\n` +
     `Hands-on in backend/API automation (${style.yellow}Java, TypeScript, Python${style.reset}), mobile verification\n` +
     `(${style.yellow}Appium${style.reset}), and AI-driven quality engineering (${style.brightCyan}custom MCP servers connecting\n` +
@@ -136,7 +136,7 @@ function printExperience() {
         `${style.bold}Team AI Enablement & QA Agents:${style.reset} Authored and managed specialized QA AI Skills and agents for the engineering org to enforce code review conventions, automate PR quality gates, identify coverage gaps, and accelerate Playwright spec authoring and migration.`,
         `${style.bold}Incident Response & Observability:${style.reset} Troubleshot production anomalies, conducted postmortem root-cause analyses (RCA), and analyzed distributed logs and metrics in Datadog and AWS CloudWatch.`,
         `${style.bold}A11y Standards & Squad Enablement:${style.reset} Spearheaded org-wide accessibility (a11y) testing conventions and WCAG guidelines; paired with feature squads on TDD and selector strategies, establishing automated a11y CI release gates.`,
-        `${style.bold}Visual Testing & Tooling Enablement:${style.reset} Drove end-to-end evaluation and rollout of visual testing frameworks (Applitools), leading tooling research, POCs, conventions, and org-wide documentation.`
+        `${style.bold}Visual Testing & Tooling Enablement:${style.reset} Drove end-to-end evaluation and rollout of visual testing frameworks (Applitools), conducting tooling research, POCs, conventions, and org-wide documentation.`
       ]
     },
     {
