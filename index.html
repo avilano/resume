@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto E. Vilano Reyna | Senior QA Automation Engineer & AI Test Architecture</title>
+  <meta name="description" content="Resume and portfolio of Alberto E. Vilano Reyna, Senior QA Automation Engineer and SDET wizard with 9+ years experience in Playwright, AI-driven testing, MCP servers, and CI/CD quality gates.">
+  <meta name="keywords" content="Alberto Vilano, SDET, QA Automation Engineer, AI Test Architecture, Playwright, Cypress, MCP, TypeScript, Python">
+  <meta name="author" content="Alberto E. Vilano Reyna">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Alberto E. Vilano Reyna - Senior QA Automation Engineer | AI Test Architecture">
+  <meta property="og:description" content="9+ years architecting production-grade test suites, developer tooling, and AI-driven quality gates across high-reliability platforms.">
+  <meta property="og:url" content="https://avilano.github.io/resume/">
+  
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --card-border: #30363d;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --green: #3fb950;
+      --purple: #bc8cff;
+      --yellow: #d29922;
+      --tag-bg: rgba(56, 139, 253, 0.15);
+      --tag-border: rgba(56, 139, 253, 0.4);
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fa;
+        --card-bg: #ffffff;
+        --card-border: #d0d7de;
+        --text-main: #1f2328;
+        --text-muted: #656d76;
+        --accent: #0969da;
+        --accent-hover: #0550ae;
+        --green: #1a7f37;
+        --purple: #8250df;
+        --yellow: #9a6700;
+        --tag-bg: #ddf4ff;
+        --tag-border: #54aeff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Top Action Bar */
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .action-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 1px solid var(--card-border);
+      background-color: var(--card-bg);
+      color: var(--text-main);
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff !important;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .terminal-pill {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    .terminal-pill:hover {
+      border-color: var(--green);
+    }
+
+    /* Profile Header */
+    .profile-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .profile-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.3rem;
+    }
+
+    .profile-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .meta-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .meta-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Key Stats Strip */
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 2px solid var(--card-border);
+      padding-bottom: 0.4rem;
+    }
+
+    .section-title span.indicator {
+      color: var(--accent);
+    }
+
+    .summary-text {
+      font-size: 1.05rem;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .skill-category {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .category-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--purple);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tags-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.825rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 12px;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    /* Experience Timeline */
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .job-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .job-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .job-role {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .job-company {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .job-period {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .job-bullets {
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+    }
+
+    .job-bullets li {
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .job-bullets li strong {
+      color: var(--text-main);
+    }
+
+    /* Education & Certs */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .info-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .info-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .info-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Terminal Simulation Box */
+    .terminal-box {
+      background: #090d13;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #7ee787;
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+
+    .terminal-box .cmd {
+      color: #58a6ff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Print Stylesheet for ATS & Clean PDF generation */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        font-size: 10pt;
+      }
+      .action-bar, .terminal-box, footer, .stats-strip {
+        display: none !important;
+      }
+      .container {
+        max-width: 100% !important;
+      }
+      .profile-name {
+        font-size: 18pt !important;
+      }
+      .profile-title {
+        font-size: 12pt !important;
+        color: #000 !important;
+      }
+      .section-title {
+        border-bottom: 1.5pt solid #333 !important;
+        font-size: 11pt !important;
+        color: #000 !important;
+        margin-top: 1rem;
+      }
+      .job-card, .skill-category, .info-card {
+        border: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+      .tag {
+        border: 1px solid #ccc !important;
+        background: #eee !important;
+        color: #000 !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: #000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Top Action Bar -->
+    <header class="action-bar">
+      <div class="action-group">
+        <a href="Alberto_Vilano_Resume.pdf" download class="btn btn-primary" title="Download official PDF resume">
+          📥 Download PDF
+        </a>
+        <a href="resume.json" target="_blank" class="btn" title="View standard JSON Resume schema">
+          📋 JSON Resume
+        </a>
+        <a href="https://github.com/avilano/resume" target="_blank" class="btn" title="View GitHub Source Repository">
+          🐙 GitHub Repo
+        </a>
+        <a href="https://linkedin.com/in/avilano" target="_blank" class="btn" title="LinkedIn Profile">
+          💼 LinkedIn
+        </a>
+      </div>
+      
+      <div class="action-group">
+        <button class="terminal-pill" onclick="copyTerminalCmd()" id="copyPill" title="Click to copy CLI command">
+          💻 <span>npx avilano-resume</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+      <h1 class="profile-name">Alberto E. Vilano Reyna</h1>
+      <div class="profile-title">Senior QA Automation Engineer | AI Test Architecture</div>
+      <div class="meta-list">
+        <div class="meta-item">
+          📍 <span>Mexico (Remote)</span>
+        </div>
+        <div class="meta-item">
+          ✉️ <a href="mailto:vira0092@gmail.com">vira0092@gmail.com</a>
+        </div>
+        <div class="meta-item">
+          💼 <a href="https://linkedin.com/in/avilano" target="_blank">linkedin.com/in/avilano</a>
+        </div>
+        <div class="meta-item">
+          🐙 <a href="https://github.com/avilano" target="_blank">github.com/avilano</a>
+        </div>
+        <div class="meta-item">
+          🗣️ <span>Spanish (Native) • English (C2 Proficient)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics & Highlights Strip -->
+    <div class="stats-strip">
+      <div class="stat-card">
+        <div class="stat-value">9+ Years</div>
+        <div class="stat-label">Quality Architecture & SDET</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">200+</div>
+        <div class="stat-label">Specs Migrated to Playwright</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">30%</div>
+        <div class="stat-label">CI Cycle Time Cut</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">1,200+</div>
+        <div class="stat-label">Tests Protected with Smoke Gates</div>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Professional Summary</h2>
+      <p class="summary-text">
+        Senior QA Automation Engineer and SDET wizard with <strong>9+ years</strong> architecting production-grade test suites, developer tooling, and automated quality gates across high-reliability platforms. Proven track record leading squad quality strategy, pairing with product engineers on TDD and testability, and executing large-scale framework migrations (including <strong>migrating 200+ specs to Playwright</strong>). Hands-on in backend/API automation (Java, TypeScript, Python), mobile verification (Appium), and AI-driven quality engineering (custom MCP servers connecting Atlassian Zephyr, automated spec generation). Experienced in production observability, log analysis, and incident triage using Elasticsearch and New Relic to safeguard transactional integrity and financial flows.
+      </p>
+    </section>
+
+    <!-- Core Technical Competencies -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Core Technical Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-name">🤖 AI Tools & Agent Orchestration</div>
+          <div class="tags-list">
+            <span class="tag">Claude Code</span>
+            <span class="tag">Cursor IDE</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Agent Orchestration</span>
+            <span class="tag">Agent Skill Authoring (SKILL.md)</span>
+            <span class="tag">Custom MCP Servers</span>
+            <span class="tag">Model Routing & Categorization</span>
+            <span class="tag">Agentic Learning & Process Auto-Improvement</span>
+            <span class="tag">LLM Evals</span>
+            <span class="tag">Synthetic Test Data</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-name">⚡ Automation & Mobile Testing</div>
+          <div class="tags-list">
+            <span class="tag">Playwright</span>
+            <span class="tag">Cypress</span>
+            <span class="tag">Appium</span>
+            <span class="tag">Selenium WebDriver</span>
+            <span class="tag">Cucumber (BDD)</span>
+            <span class="tag">Grafana K6</span>
+            <span class="tag">Component & Visual Testing</span>
+            <span class="tag">Applitools Eyes</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-name">💻 Languages & Development Stack</div>
+          <div class="tags-list">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Java (Spring Boot fundamentals)</span>
+            <span class="tag">Angular basics</span>
+            <span class="tag">Bash / Shell</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-name">🔌 API & Performance Testing</div>
+          <div class="tags-list">
+            <span class="tag">RESTful APIs</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Bruno</span>
+            <span class="tag">JMeter</span>
+            <span class="tag">Charles Proxy</span>
+            <span class="tag">Contract & Schema Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-name">☁️ CI/CD, Cloud & Observability</div>
+          <div class="tags-list">
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS (CloudWatch, S3, EC2)</span>
+            <span class="tag">Datadog (APM, Logs, Metrics)</span>
+            <span class="tag">New Relic</span>
+            <span class="tag">Root Cause Analysis (RCA)</span>
+            <span class="tag">Log Matching</span>
+            <span class="tag">Triage Dashboards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Professional Experience</h2>
+      <div class="experience-list">
+        
+        <!-- Coursedog -->
+        <article class="job-card">
+          <div class="job-header">
+            <div>
+              <span class="job-role">Senior Software Development Engineer in Test</span>
+              <span> &middot; </span>
+              <span class="job-company">Coursedog, Inc.</span>
+            </div>
+            <span class="job-period">Aug 2021 – Present | Remote</span>
+          </div>
+          <ul class="job-bullets">
+            <li><strong>Framework Modernization & Stability:</strong> Led the migration of 200+ specs from Cypress to Playwright; implemented PR-level smoke gates across 1,200+ tests, reducing build flakiness by &gt;20% and cutting CI execution cycle times by 30%.</li>
+            <li><strong>Team AI Enablement & QA Agents:</strong> Authored and managed specialized QA AI Skills and agents for the engineering org to enforce code review conventions, automate PR quality gates, identify coverage gaps, and accelerate Playwright spec authoring and migration.</li>
+            <li><strong>Incident Response & Observability:</strong> Troubleshot production anomalies, conducted postmortem root-cause analyses (RCA), and analyzed distributed logs and metrics in Datadog and AWS CloudWatch to isolate backend regressions and verify transactional telemetry.</li>
+            <li><strong>A11y Standards & Squad Enablement:</strong> Spearheaded the org-wide introduction of accessibility (a11y) testing conventions and WCAG guidelines; paired with feature squads on TDD, predictable selectors best practice strategies, and established automated a11y checks in CI as standard release gates.</li>
+            <li><strong>Visual Testing & Tooling Enablement:</strong> Drove the end-to-end evaluation and rollout of visual testing frameworks (Applitools), leading tooling research, architecting POCs, authoring team conventions, and delivering documentation and training for org-wide adoption.</li>
+          </ul>
+        </article>
+
+        <!-- Bold.org -->
+        <article class="job-card">
+          <div class="job-header">
+            <div>
+              <span class="job-role">QA Engineer</span>
+              <span> &middot; </span>
+              <span class="job-company">Bold.org</span>
+            </div>
+            <span class="job-period">Aug 2021 – Dec 2021 | Remote</span>
+          </div>
+          <ul class="job-bullets">
+            <li><strong>Greenfield Quality Architecture:</strong> Designed and deployed an end-to-end automation platform for a fast-growing financial/education application, establishing CI/CD quality gates using GitHub Actions.</li>
+            <li><strong>Payment & Wallet Verification:</strong> Automated comprehensive regression suites covering payment gateway integrations, user wallet balances, and PostgreSQL transactional state integrity.</li>
+            <li><strong>Pipeline Optimization & Triage:</strong> Configured concurrent test execution runners in CI/CD, boosting test run reliability and establishing sprint-level automation audits to accelerate defect triage.</li>
+          </ul>
+        </article>
+
+        <!-- Enroute / IAS -->
+        <article class="job-card">
+          <div class="job-header">
+            <div>
+              <span class="job-role">Software Development Engineer in Test</span>
+              <span> &middot; </span>
+              <span class="job-company">Enroute / Integral Ad Science</span>
+            </div>
+            <span class="job-period">Sep 2017 – Aug 2021 | Remote</span>
+          </div>
+          <ul class="job-bullets">
+            <li><strong>Framework Modernization & Architecture:</strong> Maintained and expanded custom test automation framework, migrating legacy codebases to Python 3, Java, and Selenium across distributed backend services and ad-measurement pipelines.</li>
+            <li><strong>Partner & Integration Testing:</strong> Architected automated verification suites covering core data and media integrations with partners including Twitch, Amazon, and Toyota, validating telemetry accuracy and tracking beacons.</li>
+            <li><strong>Cloud & CI/CD Infrastructure:</strong> Spearheaded the decommissioning of legacy on-prem test infrastructure by containerizing runners in Docker and transitioning CI/CD pipelines to AWS cloud environments using Jenkins.</li>
+            <li><strong>Engineering Culture & Mentorship:</strong> Held daily pair-programming sessions with dev pods to debug and write tests, championed shift-left unit/acceptance coverage, and mentored a cohort of engineering interns in QA automation.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Education & Credentials</h2>
+      <div class="grid-2col">
+        <div class="info-card">
+          <h4>The University of Texas Rio Grande Valley</h4>
+          <p><strong>Bachelor of Science in Engineering Physics</strong></p>
+        </div>
+        <div class="info-card">
+          <h4>Certifications & Accreditations</h4>
+          <p>• <strong>AWS Certified Developer Associate</strong></p>
+          <p>• <strong>ISTQB Certified Tester (Foundation Level)</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal CLI Showcase -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Interactive Terminal Experience</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        You can inspect my resume directly inside your terminal using Node.js:
+      </p>
+      <div class="terminal-box">
+        <span class="cmd">$</span> npx avilano-resume<br>
+        <span class="cmd">$</span> npx avilano-resume --skills<br>
+        <span class="cmd">$</span> npx avilano-resume --json
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2026 Alberto E. Vilano Reyna &bull; Built with 💜 as Code on 
+        <a href="https://github.com/avilano/resume" target="_blank">GitHub</a>.
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    function copyTerminalCmd() {
+      navigator.clipboard.writeText('npx avilano-resume');
+      const pill = document.getElementById('copyPill');
+      const originalText = pill.innerHTML;
+      pill.innerHTML = '✅ <span>Copied to clipboard!</span>';
+      setTimeout(() => {
+        pill.innerHTML = originalText;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

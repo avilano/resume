@@ -1,32 +1,41 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "Alberto Ettienne Vilano Reyna's Resume",
-  "main": "index.js",
+  "name": "avilano-resume",
+  "version": "2.0.0",
+  "description": "Alberto E. Vilano Reyna - Senior QA Automation Engineer | AI Test Architecture (Resume, Portfolio & CLI)",
+  "main": "bin/resume.js",
+  "bin": {
+    "avilano": "bin/resume.js",
+    "avilano-resume": "bin/resume.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/resume.js",
+    "cli": "node bin/resume.js",
+    "test": "node test/validate.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avilano/Resume.git"
+    "url": "git+https://github.com/avilano/resume.git"
   },
   "keywords": [
-    "avilano",
     "resume",
-    "vilano",
-    "alberto",
-    "vilano",
-    "alberto",
-    "ettienne",
-    "alberto",
-    "ettienne",
-    "vilano",
-    "reyna"
+    "cv",
+    "sdet",
+    "qa-automation",
+    "qa-engineer",
+    "ai-testing",
+    "ai-test-architecture",
+    "playwright",
+    "typescript",
+    "cypress",
+    "mcp-servers",
+    "json-resume",
+    "portfolio",
+    "avilano"
   ],
-  "author": "Alberto E. Vilano Reyna",
-  "license": "ISC",
+  "author": "Alberto E. Vilano Reyna <vira0092@gmail.com> (https://github.com/avilano)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avilano/Resume/issues"
+    "url": "https://github.com/avilano/resume/issues"
   },
-  "homepage": "https://github.com/avilano/Resume#readme"
+  "homepage": "https://avilano.github.io/resume/"
 }

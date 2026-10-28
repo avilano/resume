@@ -1,0 +1,175 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alberto E. Vilano Reyna",
+    "label": "Senior QA Automation Engineer | AI Test Architecture",
+    "image": "",
+    "email": "vira0092@gmail.com",
+    "url": "https://avilano.github.io/resume/",
+    "summary": "Senior QA Automation Engineer and SDET wizard with 9+ years architecting production-grade test suites, developer tooling, and automated quality gates across high-reliability platforms. Proven track record leading squad quality strategy, pairing with product engineers on TDD and testability, and executing large-scale framework migrations (including migrating 200+ specs to Playwright). Hands-on in backend/API automation (Java, TypeScript, Python), mobile verification (Appium), and AI-driven quality engineering (custom MCP servers connecting Atlassian Zephyr, automated spec generation). Experienced in production observability, log analysis, and incident triage using Elasticsearch and New Relic to safeguard transactional integrity and financial flows.",
+    "location": {
+      "city": "",
+      "countryCode": "MX",
+      "region": "Mexico (Remote)"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "avilano",
+        "url": "https://linkedin.com/in/avilano"
+      },
+      {
+        "network": "GitHub",
+        "username": "avilano",
+        "url": "https://github.com/avilano"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Coursedog, Inc.",
+      "position": "Senior Software Development Engineer in Test",
+      "url": "https://www.coursedog.com",
+      "startDate": "2021-08-01",
+      "summary": "Leading quality strategy, test automation infrastructure, and AI engineering enablement across distributed squads.",
+      "highlights": [
+        "Framework Modernization & Stability: Led the migration of 200+ specs from Cypress to Playwright; implemented PR-level smoke gates across 1,200+ tests, reducing build flakiness by >20% and cutting CI execution cycle times by 30%.",
+        "Team AI Enablement & QA Agents: Authored and managed specialized QA AI Skills and agents for the engineering org to enforce code review conventions, automate PR quality gates, identify coverage gaps, and accelerate Playwright spec authoring and migration.",
+        "Incident Response & Observability: Troubleshot production anomalies, conducted postmortem root-cause analyses (RCA), and analyzed distributed logs and metrics in Datadog and AWS CloudWatch to isolate backend regressions and verify transactional telemetry.",
+        "A11y Standards & Squad Enablement: Spearheaded the org-wide introduction of accessibility (a11y) testing conventions and WCAG guidelines; paired with feature squads on TDD, predictable selectors best practice strategies, and established automated a11y checks in CI as standard release gates.",
+        "Visual Testing & Tooling Enablement: Drove the end-to-end evaluation and rollout of visual testing frameworks (Applitools), leading tooling research, architecting POCs, authoring team conventions, and delivering documentation and training for org-wide adoption."
+      ]
+    },
+    {
+      "name": "Bold.org",
+      "position": "QA Engineer",
+      "url": "https://bold.org",
+      "startDate": "2021-08-01",
+      "endDate": "2021-12-01",
+      "summary": "Greenfield quality architecture and financial payment pipeline verification.",
+      "highlights": [
+        "Greenfield Quality Architecture: Designed and deployed an end-to-end automation platform for a fast-growing financial/education application, establishing CI/CD quality gates using GitHub Actions.",
+        "Payment & Wallet Verification: Automated comprehensive regression suites covering payment gateway integrations, user wallet balances, and PostgreSQL transactional state integrity.",
+        "Pipeline Optimization & Triage: Configured concurrent test execution runners in CI/CD, boosting test run reliability and establishing sprint-level automation audits to accelerate defect triage."
+      ]
+    },
+    {
+      "name": "Enroute / Integral Ad Science",
+      "position": "Software Development Engineer in Test",
+      "url": "https://integralads.com",
+      "startDate": "2017-09-01",
+      "endDate": "2021-08-01",
+      "summary": "Test automation architecture, partner media telemetry verification, and CI/CD cloud modernization.",
+      "highlights": [
+        "Framework Modernization & Architecture: Maintained and expanded custom test automation framework, migrating legacy codebases to Python 3, Java, and Selenium across distributed backend services and ad-measurement pipelines.",
+        "Partner & Integration Testing: Architected automated verification suites covering core data and media integrations with partners including Twitch, Amazon, and Toyota, validating telemetry accuracy and tracking beacons.",
+        "Cloud & CI/CD Infrastructure: Spearheaded the decommissioning of legacy on-prem test infrastructure by containerizing runners in Docker and transitioning CI/CD pipelines to AWS cloud environments using Jenkins.",
+        "Engineering Culture & Mentorship: Held daily pair-programming sessions with dev pods to debug and write tests, championed shift-left unit/acceptance coverage, and mentored a cohort of engineering interns in QA automation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of Texas Rio Grande Valley",
+      "area": "Engineering Physics",
+      "studyType": "Bachelor of Science"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Developer Associate",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "ISTQB Certified Tester (Foundation Level)",
+      "issuer": "ISTQB - International Software Testing Qualifications Board"
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI Tools & Agent Orchestration",
+      "level": "Master",
+      "keywords": [
+        "Claude Code",
+        "Cursor IDE",
+        "Gemini",
+        "Agent Orchestration",
+        "Agent Skill Authoring & Management (SKILL.md)",
+        "MCP Servers",
+        "Model Routing & Categorization",
+        "Agentic Learning & Process Auto-Improvement",
+        "LLM Evals",
+        "Synthetic Test Data"
+      ]
+    },
+    {
+      "name": "Automation & Mobile",
+      "level": "Master",
+      "keywords": [
+        "Playwright",
+        "Cypress",
+        "Appium",
+        "Selenium WebDriver",
+        "Cucumber (BDD)",
+        "Grafana K6",
+        "Component & Visual Testing",
+        "Applitools"
+      ]
+    },
+    {
+      "name": "Stack & Languages",
+      "level": "Senior",
+      "keywords": [
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Python",
+        "SQL",
+        "Java (Spring Boot fundamentals)",
+        "Angular basics",
+        "Bash/Shell"
+      ]
+    },
+    {
+      "name": "API & Performance Testing",
+      "level": "Senior",
+      "keywords": [
+        "RESTful APIs",
+        "Microservices",
+        "Postman",
+        "Bruno",
+        "JMeter",
+        "Charles Proxy",
+        "Contract & Schema Validation"
+      ]
+    },
+    {
+      "name": "CI/CD, Cloud & Observability",
+      "level": "Senior",
+      "keywords": [
+        "GitHub Actions",
+        "Jenkins",
+        "Docker",
+        "AWS (CloudWatch, S3, EC2)",
+        "New Relic",
+        "Datadog (APM, Logs, Metrics)",
+        "Root Cause Analysis (RCA)",
+        "Log Matching",
+        "Triage Dashboards"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C2 - Proficient"
+    }
+  ],
+  "meta": {
+    "version": "v2.0.0",
+    "canonical": "https://raw.githubusercontent.com/avilano/resume/master/resume.json"
+  }
+}
