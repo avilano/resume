@@ -172,6 +172,16 @@ function printExperience() {
   });
 }
 
+function printProjects() {
+  console.log(`\n${style.bold}${style.brightBlue}■ FEATURED PORTFOLIO PROJECT${style.reset}`);
+  console.log(`${style.dim}────────────────────────────────────────────────────────────────────────────${style.reset}`);
+  console.log(`  ${style.brightGreen}🛡️  Sentinela (PulseQA)${style.reset}  ${style.gray}—${style.reset}  ${style.brightCyan}https://github.com/avilano/sentinela${style.reset}`);
+  console.log(`  ${style.italic}AI-Augmented Quality Platform & Risk Engine (Playwright + TypeScript)${style.reset}\n`);
+  console.log(`   ${style.yellow}•${style.reset} ${style.bold}Smart Risk Engine:${style.reset} Inspects PR git diffs to run only affected tests (@smoke, @pay, @a11y).`);
+  console.log(`   ${style.yellow}•${style.reset} ${style.bold}Autonomous AI Triage:${style.reset} Ingests DOM locators & network logs to diagnose APP_BUG vs SELECTOR_DRIFT.`);
+  console.log(`   ${style.yellow}•${style.reset} ${style.bold}Chaos Scenarios:${style.reset} Real-time failure simulation with Stripe webhooks & axe-core WCAG release gates.`);
+}
+
 function printEducation() {
   console.log(`${style.bold}${style.brightBlue}■ EDUCATION & CREDENTIALS${style.reset}`);
   console.log(`${style.dim}────────────────────────────────────────────────────────────────────────────${style.reset}`);
@@ -185,7 +195,8 @@ function printEducation() {
 function printFooter() {
   console.log(`${style.dim}────────────────────────────────────────────────────────────────────────────${style.reset}`);
   console.log(`${style.gray}Quick commands:${style.reset}`);
-  console.log(`  ${style.cyan}node bin/resume.js --all${style.reset}         Full resume view`);
+  console.log(`  ${style.cyan}node bin/resume.js --all${style.reset}         Full resume & portfolio view`);
+  console.log(`  ${style.cyan}node bin/resume.js --project${style.reset}     Spotlight Sentinela project`);
   console.log(`  ${style.cyan}node bin/resume.js --skills${style.reset}      View core competencies`);
   console.log(`  ${style.cyan}node bin/resume.js --experience${style.reset}  View experience details`);
   console.log(`  ${style.cyan}node bin/resume.js --json${style.reset}        Dump machine-readable JSON`);
@@ -199,9 +210,14 @@ if (flag === '--skills') {
 } else if (flag === '--experience') {
   printHeader();
   printExperience();
+} else if (flag === '--project' || flag === '--projects') {
+  printHeader();
+  printProjects();
+  printFooter();
 } else if (flag === '--all') {
   printHeader();
   printSummary();
+  printProjects();
   printSkills();
   printExperience();
   printEducation();
@@ -213,6 +229,7 @@ if (flag === '--skills') {
   // Default concise interactive card
   printHeader();
   printSummary();
+  printProjects();
   printSkills();
   printFooter();
 }

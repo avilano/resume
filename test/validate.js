@@ -40,7 +40,14 @@ if (!Array.isArray(resume.skills) || resume.skills.length === 0) {
 }
 console.log(`✓ Technical skills categorized in ${resume.skills.length} domains`);
 
-// 5. Validate PDF presence
+// 5. Validate projects (Sentinela)
+if (!Array.isArray(resume.projects) || resume.projects.length === 0) {
+  console.error('FAIL: resume.projects is empty');
+  process.exit(1);
+}
+console.log(`✓ Projects verified: ${resume.projects.map(p => p.name).join(', ')}`);
+
+// 6. Validate PDF presence
 const pdfPath = path.join(__dirname, '..', 'Alberto_Vilano_Resume.pdf');
 const aliasPdfPath = path.join(__dirname, '..', 'resume.pdf');
 if (fs.existsSync(pdfPath) && fs.existsSync(aliasPdfPath)) {

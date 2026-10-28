@@ -31,6 +31,17 @@ Hands-on in backend/API automation (**Java, TypeScript, Python**), mobile verifi
 
 ---
 
+## 🛡️ Featured Project: [Sentinela (PulseQA)](https://github.com/avilano/sentinela)
+
+An open-source AI-augmented quality platform and risk engine built on Playwright & TypeScript:
+
+* 🎯 **Changed-File Risk Engine:** Inspects PR git diffs to dynamically tag and run only affected tests (`@smoke`, `@pay`, `@a11y`), cutting CI cycle times and preventing full-suite bottlenecks.
+* 🤖 **Autonomous AI Failure Triage:** Ingests broken locators, network logs, and stack traces to automatically classify failures (`APP_BUG`, `SELECTOR_DRIFT`, or `FLAKY_RACE_CONDITION`).
+* 💥 **Chaos & Payment Verification:** Features built-in chaos scenarios (e.g. simulating Stripe HTTP 500s or selector drift), plus axe-core WCAG 2.1 AA accessibility release gates.
+* 👉 **Explore the repository & live chaos demos:** [github.com/avilano/sentinela](https://github.com/avilano/sentinela)
+
+---
+
 ## ⚡ Core Technical Competencies
 
 | Domain | Technologies & Methodologies |

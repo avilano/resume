@@ -586,6 +586,31 @@
       </div>
     </section>
 
+    <!-- Featured Portfolio Project -->
+    <section>
+      <h2 class="section-title"><span class="indicator">#</span> Featured Portfolio Project</h2>
+      <article class="job-card" style="border-left: 4px solid var(--accent);">
+        <div class="job-header">
+          <div>
+            <span class="job-role">Sentinela (PulseQA)</span>
+            <span> &middot; </span>
+            <span class="job-company">AI Quality Platform & Risk Engine</span>
+          </div>
+          <a href="https://github.com/avilano/sentinela" target="_blank" class="btn" style="padding: 0.3rem 0.7rem; font-size: 0.8rem;">
+            🐙 View Repository &rarr;
+          </a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+          An open-source developer-facing Playwright + TypeScript test platform that pairs a changed-file risk engine with autonomous AI failure triage.
+        </p>
+        <ul class="job-bullets">
+          <li><strong>Changed-File Risk Engine:</strong> Inspects PR git diffs to dynamically select and execute matching risk-tagged test suites (<code style="font-family: var(--font-mono); color: var(--accent);">@smoke</code>, <code style="font-family: var(--font-mono); color: var(--accent);">@pay</code>, <code style="font-family: var(--font-mono); color: var(--accent);">@a11y</code>), avoiding full-suite CI bottlenecks.</li>
+          <li><strong>Autonomous AI Failure Triage:</strong> Ingests broken DOM locators, network logs, and stack traces to automatically classify failures into <code style="font-family: var(--font-mono); color: var(--green);">APP_BUG</code>, <code style="font-family: var(--font-mono); color: var(--yellow);">SELECTOR_DRIFT</code>, or <code style="font-family: var(--font-mono); color: var(--purple);">FLAKY_RACE_CONDITION</code>.</li>
+          <li><strong>Chaos Testing & Reliability:</strong> Includes simulated Stripe HTTP 500 payment webhook failures, locator drift chaos demos, and automated axe-core WCAG 2.1 AA accessibility release gates.</li>
+        </ul>
+      </article>
+    </section>
+
     <!-- Professional Experience -->
     <section>
       <h2 class="section-title"><span class="indicator">#</span> Professional Experience</h2>

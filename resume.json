@@ -168,6 +168,20 @@
       "fluency": "C2 - Proficient"
     }
   ],
+  "projects": [
+    {
+      "name": "Sentinela (PulseQA)",
+      "description": "AI-augmented quality platform, changed-file risk engine, and autonomous failure triage agent built around Playwright and TypeScript.",
+      "highlights": [
+        "Smart Risk Engine: Analyzes git diffs on PRs to run only matching risk-tagged tests (@smoke, @pay, @a11y) cutting CI cycle times.",
+        "AI Failure Triage: Automatically parses DOM locators, network logs, and stack traces to classify failures into APP_BUG, SELECTOR_DRIFT, or FLAKY_RACE_CONDITION.",
+        "Chaos & Resilience: Features Stripe payment webhook verification, axe-core WCAG 2.1 AA accessibility checks, and chaos injection demos."
+      ],
+      "keywords": ["Playwright", "TypeScript", "AI Triage", "Risk Engine", "Docker", "Stripe Webhooks", "WCAG 2.1 AA"],
+      "startDate": "2024-01-01",
+      "url": "https://github.com/avilano/sentinela"
+    }
+  ],
   "meta": {
     "version": "v2.0.0",
     "canonical": "https://raw.githubusercontent.com/avilano/resume/master/resume.json"
